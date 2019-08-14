@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Emark_Mbbwebservice>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Emark_Mbbwebservice>
+    </modules>
+</config>

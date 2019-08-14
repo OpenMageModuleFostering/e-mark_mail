@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Emark_Cartalert>
+            <active>true</active>
+            <codePool>community</codePool>
+            <self_name>Emark Cart-Alerts</self_name>
+            <priority>10060</priority>
+        </Emark_Cartalert>
+    </modules>
+</config>
+

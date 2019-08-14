@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/e-mark_mail",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "This module adds Cart abondement, synchronize newsletter subscribers with E-mark Mail and replace the smtp with E-mark Transactional Mailer.",
+    "authors": [
+    {
+        "name": "E-mark",
+        "email": "timd@e-mark.nl"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

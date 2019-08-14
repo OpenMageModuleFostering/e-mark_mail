@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs>
+        <mbbwebservice translate="label" module="mbbwebservice">
+            <label>e-mark cart abandonment</label>
+            <sort_order>150</sort_order>
+        </mbbwebservice>
+    </tabs>
+	<sections>
+		<mbbwebservice translate="label" module="mbbwebservice">
+			<label>SMTP Settings</label>
+			<tab>mbbwebservice</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>General Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+
+						<enabled translate="label">
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<comment>If enabled, overrides standart SMTP settings</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</enabled>
+						<test translate="label">
+							<label>Send test mail now</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>200</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<comment>Sender of test mail is general contact of your store</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</test>
+						<test_address translate="label">
+							<label>Recipient of test mail</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>300</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+						</test_address>
+					</fields>
+				</general>
+				<smtp translate="label">
+					<label>Emark settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<host translate="label">
+							<label>Host</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>110</sort_order>
+							<show_in_default>1</show_in_default>
+                                                        <show_in_website>1</show_in_website>
+                                                        <show_in_store>1</show_in_store>
+                                                        <validate>required-entry</validate>
+						</host>
+						<ports>
+							<label>Ports</label>
+                                                        <frontend_type>text</frontend_type>
+                                                        <sort_order>120</sort_order>
+                                                        <show_in_default>1</show_in_default>
+                                                        <show_in_website>1</show_in_website>
+                                                        <show_in_store>1</show_in_store>
+                                                        <validate>required-entry</validate>
+						</ports>
+						<login translate="label">
+							<label>API Key</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>130</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+						</login>
+						<password translate="label">
+							<label>Secret Key</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>140</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+						</password>
+					</fields>
+				</smtp>
+			</groups>
+		</mbbwebservice>
+	</sections>
+</config>

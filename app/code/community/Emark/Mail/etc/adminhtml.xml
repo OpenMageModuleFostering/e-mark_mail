@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+	<!--<menu>
+		<mail translate="title" module="mail">
+			<title>E-mark Mail</title>
+			<sort_order>55</sort_order>
+			<children>
+				<selections translate="title" module="mail">
+					<title>Selections</title>
+					<action>mail/selections/index</action>
+					<sort_order>1</sort_order>
+				</selections>
+			</children>
+		</mail>
+	</menu>-->
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<emark_sections translate="title" module="mail">
+										<title>Emark Mail</title>
+										<sort_order>100</sort_order>
+									</emark_sections>
+									<emark_customer_settings translate="title" module="mail">
+										<title>Emark Mail</title>
+                                        			                <sort_order>110</sort_order>
+									</emark_customer_settings>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
